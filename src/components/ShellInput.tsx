@@ -3,7 +3,15 @@ import executeCommand from '../utils/executeCommand';
 
 export default function ShellInput() {
     const [command, setCommand] = useState<string>('');
-    const commandList: string[] = ['welcome', 'help', 'about', 'clear'];
+    const commandList: string[] = [
+        'about',
+        'clear',
+        'education',
+        'help',
+        'projects',
+        'social',
+        'welcome',
+    ];
 
     return (
         <form
@@ -27,7 +35,7 @@ export default function ShellInput() {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     setCommand(e.target.value)
                 }
-                className={`flex-1 outline-0 ${commandList.includes(command.trim()) ? 'text-indigo-200 text-shadow-indigo-500 text-shadow-xs' : ''}`}
+                className={`flex-1 outline-0 ${commandList.includes(command.trim().toLowerCase()) ? 'text-indigo-200 text-shadow-indigo-500 text-shadow-xs' : ''}`}
             />
         </form>
     );

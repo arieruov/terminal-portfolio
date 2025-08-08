@@ -1,7 +1,7 @@
 export default function WelcomeCommand() {
     return (
         <div>
-            <pre className="text-[9px] leading-none text-cyan-200 md:text-sm">
+            <pre className="text-[8px] leading-none text-cyan-200 md:text-sm">
                 {`
  █████╗ ██████╗ ██╗███████╗██████╗ ██╗   ██╗ ██████╗ ██╗   ██╗
 ██╔══██╗██╔══██╗██║██╔════╝██╔══██╗██║   ██║██╔═══██╗██║   ██║
