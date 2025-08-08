@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
+import CommandHistory from './components/CommandHistory';
+import executeCommand from './utils/executeCommand';
+
 export default function App() {
+    useEffect(() => executeCommand('welcome'), []);
+    
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <main className="flex h-screen w-screen flex-col overflow-scroll bg-[#1F2430] px-4 py-4 text-xs font-semibold text-white md:text-base">
+            <CommandHistory />
+        </main>
     );
 }
