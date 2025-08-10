@@ -16,7 +16,9 @@ export default function WelcomeCommand() {
             <br />
             <p>
                 For a list of available commands type{' '}
-                <span className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs">help</span>
+                <span className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs">
+                    help
+                </span>
             </p>
         </div>
     );

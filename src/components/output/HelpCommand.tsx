@@ -1,8 +1,7 @@
 export default function HelpCommand() {
     return (
         <div>
-            <h2>Commands available:</h2>
-            <br />
+            <h2 className="mb-2">Commands available:</h2>
             <table className="border-separate border-spacing-y-2 md:border-collapse md:border-spacing-y-0">
                 <tr>
                     <td className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs">

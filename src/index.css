@@ -3,16 +3,33 @@
 
 @layer base {
     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         font-family: 'Source Code Pro', monospace;
     }
 
     html,
-    body {
+    body,
+    #root {
         height: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        width: 100%;
         overflow: hidden;
         background-color: black;
+    }
+
+    /* Hide scrollbars for webkit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbars for Firefox */
+    * {
+        scrollbar-width: none;
+    }
+
+    /* Hide scrollbars for IE and Edge legacy */
+    * {
+        -ms-overflow-style: none;
     }
 }

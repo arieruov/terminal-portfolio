@@ -9,7 +9,7 @@ export default function ShellInput() {
         'education',
         'help',
         'projects',
-        'social',
+        'socials',
         'welcome',
     ];
 
@@ -24,7 +24,7 @@ export default function ShellInput() {
         >
             <label htmlFor="shellInput">
                 <span className="text-cyan-200">user</span>@
-                <span className="text-violet-200">hostname</span>:~$
+                <span className="text-fuchsia-200">arieruov.sh</span>:~$
             </label>
             <input
                 id="shellInput"

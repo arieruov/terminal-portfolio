@@ -8,12 +8,15 @@ export default function CommandHistory() {
         <section className="">
             {history.map((item) => {
                 return (
-                    <section className="mb-4 flex flex-col gap-2" key={item.id}>
+                    <section
+                        className="mb-2 flex flex-col gap-2 "
+                        key={item.id}
+                    >
                         <div className="h-fit w-full">
                             <p>
                                 <span className="text-cyan-200">user</span>@
-                                <span className="text-violet-200">
-                                    hostname
+                                <span className="text-fuchsia-200">
+                                    arieruov.sh
                                 </span>
                                 :~$
                                 <span className="ml-2 text-gray-400">
