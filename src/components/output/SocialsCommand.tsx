@@ -1,21 +1,28 @@
+interface socialInterface {
+    name: string;
+    url: string;
+}
+
 export default function SocialsCommand() {
+    const socialLinks: socialInterface[] = [
+        { name: 'GitHub', url: 'https://github.com/arieruov/' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/brandonaov/' },
+    ];
+
     return (
         <div>
             <h2 className="mb-2">My social links:</h2>
             <ul>
-                <li className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs">
-                    <a href="https://github.com/arieruov/" target="_blank">
-                        Github
-                    </a>
-                </li>
-                <li className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs">
-                    <a
-                        href="https://www.linkedin.com/in/brandonaov/"
-                        target="_blank"
+                {socialLinks.map((s, i) => (
+                    <li
+                        key={i}
+                        className="text-indigo-200 text-shadow-indigo-500 text-shadow-xs"
                     >
-                        LinkedIn
-                    </a>
-                </li>
+                        <a href={s.url} target="_blank">
+                            {s.name}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </div>
     );
